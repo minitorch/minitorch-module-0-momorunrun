@@ -11,4 +11,5 @@ Task 0.5:
 - linear.weight_0_0 = -1.02
 - linear.weight_1_0 = -1.02
 - linear.bias_0 = 0.54
+
 ![Diag image](images/diag.png)
