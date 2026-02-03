@@ -56,8 +56,8 @@ class Module:
         # TODO: Implement for Task 0.4.
         params = [(name, param) for name, param in self._parameters.items()]
         for module_name, module in self._modules.items():
-            # for (param_name, param) in module._parameters.items():
-            for (param_name, param) in module.named_parameters(): # recursive
+            # for (param_name, param) in module._parameters.items(): # need to be recursive
+            for param_name, param in module.named_parameters():
                 # params.append((f"{module_name}.{param_name}", param))
                 params += {(f"{module_name}.{param_name}", param)}
         return params
